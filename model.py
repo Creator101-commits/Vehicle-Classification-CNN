@@ -88,7 +88,7 @@ val_dataset = TransformSubset(val_subset, val_transform)
 
 # DataLoaders
 BATCH_SIZE = 64
-NUM_WORKERS = 2  # set to 0 if multiprocessing causes issues on Colab
+NUM_WORKERS = 2
 
 train_loader = DataLoader(
     train_dataset,
@@ -213,9 +213,8 @@ if __name__ == "__main__":
     train_accuracies = []
     val_accuracies = []
 
-    print("\n" + "=" * 70)
+    print("\n")
     print("Training started")
-    print("=" * 70)
 
     for epoch in range(1, NUM_EPOCHS + 1):
         # Training phase
@@ -240,7 +239,6 @@ if __name__ == "__main__":
             f"Val Loss: {val_loss:.4f}  Val Acc: {val_acc:5.2f}%"
         )
 
-    print("=" * 70)
     print("Training complete\n")
 
     final_train_loss, final_train_acc = evaluate(model, train_loader, criterion, device)

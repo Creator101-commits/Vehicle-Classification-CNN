@@ -64,7 +64,7 @@ Bicycle, Bus, Car, Motorcycle, NonVehicles, Taxi, Truck, Van
 
 ## Meta
 
-Distributed under the MIT license. See `LICENSE` for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 [https://github.com/Creator101-commits/Vehicle-Classification-CNN](https://github.com/Creator101-commits/Vehicle-Classification-CNN)
 
